@@ -3,12 +3,111 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Our Awesome Website</title>
+  <title>My Awesome Website</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #f1c40f;
+    }
+
+    .hero {
+      padding: 80px 40px 40px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .hero button {
+      background-color: #2c3e50;
+      color: white;
+      padding: 12px 25px;
+      font-size: 1rem;
+      border-radius: 8px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .hero button:hover {
+      background-color: #f1c40f;
+      color: #2c3e50;
+    }
+
+    .content {
+      background-color: #ffffffcc;
+      margin: 40px auto;
+      max-width: 800px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .content h3 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      color: #2c3e50;
+    }
+
+    .content p {
+      font-size: 1rem;
+      color: #444;
+    }
+  </style>
 </head>
 <body>
 
   <header>
-    <h1>Our Awesome Website</h1>
+    <h1>My Awesome Website</h1>
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -39,23 +138,13 @@
     <h3>Featured Image</h3>
     <figure>
       <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80" 
-           alt="Mountain landscape under blue sky">
-      <figcaption>
-        Photo by <a href="https://unsplash.com/@eberhardgross" target="_blank">Eberhard Grossgasteiger</a> on 
-        <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+           alt="Mountain landscape under blue sky" 
+           style="width:100%; border-radius:10px; margin-bottom: 10px;">
+      <figcaption style="font-size: 0.9rem; color: #666;">
+        Photo by <a href="https://unsplash.com/@eberhardgross" target="_blank" style="color: #2c3e50;">Eberhard Grossgasteiger</a> on 
+        <a href="https://unsplash.com/" target="_blank" style="color: #2c3e50;">Unsplash</a>
       </figcaption>
     </figure>
-  </section>
-
-  <section id="team" class="content">
-    <h3>Meet the Team</h3>
-    <ul>
-      <li>Darren De Belen – Project Manager</li>
-      <li>Hersher Cristobal – Content</li>
-      <li>Rhoanne Kyla Maclang – Image</li>
-      <li>Russel Dionisio – Button</li>
-      <li>Kier Lenard Perez – CSS</li>
-    </ul>
   </section>
 
   <script>
